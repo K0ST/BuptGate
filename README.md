@@ -1,9 +1,10 @@
 # 自邮门
 北邮网关认证客户端“自邮门”
+本客户端是用来登录北邮网关的，具体详情请见：http://bbs.byr.cn/#!article/MobileTerminalAT/19251
 
 #说明
 
-本客户端是用来登录北邮网关的，具体详情请见：http://bbs.byr.cn/#!article/MobileTerminalAT/19251
+使用Android Studio进行开发，导入的时候注意一下。另外Gradle之类的可能版本会有不兼容，也注意一下。
 
 
 #注意
