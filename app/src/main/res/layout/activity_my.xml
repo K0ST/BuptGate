@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:id="@+id/root"
+    tools:context=".MyActivity">
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <pro.kost.bupt.views.AnimateBackground
+        android:id="@+id/animBack"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </pro.kost.bupt.views.AnimateBackground>
+
+    <LinearLayout
+        android:id="@+id/login_all"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:id="@+id/texts"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/summary"
+                android:textStyle="italic"
+                android:fontFamily="sans-serif-light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:text="Log In to SURF"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:layout_above="@id/summary"
+                android:id="@+id/title"
+                android:textColor="#eb7054"
+                android:textStyle="italic"
+                android:fontFamily="sans-serif-bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="Aloha!"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:gravity="bottom"
+            android:animateLayoutChanges="true"
+            android:id="@+id/loginViews"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <EditText
+                android:maxLength="15"
+                android:inputType="number"
+                android:id="@+id/username"
+                android:layout_marginTop="12dp"
+                android:textColor="#565656"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your ID"
+                android:paddingLeft="16dp"
+                android:paddingRight="0dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/edittext_bg" />
+            <EditText
+                android:inputType="textPassword"
+                android:maxLength="24"
+                android:id="@+id/psw"
+                android:layout_marginTop="12dp"
+                android:textColor="#565656"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your Password"
+                android:paddingLeft="16dp"
+                android:paddingRight="0dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/edittext_bg" />
+            <Button
+                android:text="Log In"
+                android:id="@+id/login"
+                android:layout_marginTop="12dp"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-bold"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/login_bg" />
+            <Button
+                android:text="About"
+                android:id="@+id/about"
+                android:layout_marginTop="12dp"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-bold"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/manage_bg" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/button_margin_bottom"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

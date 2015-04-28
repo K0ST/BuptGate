@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#32b16c" >
+
+        <ImageView
+            android:onClick="onClick"
+            android:layout_marginTop="20dp"
+            android:id="@+id/logo"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_logo" />
+
+        <TextView
+            android:visibility="gone"
+            android:clickable="true"
+            android:id="@+id/clicktofollow"
+            android:onClick="onClick"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Click to Follow"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/email"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:src="@drawable/ic_com_sina_weibo_sdk_logo" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/share"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:src="@drawable/ic_action_share" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        android:background="#f0f0f0"
+        android:layout_weight="2" >
+
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="18dp"
+                android:text="Dummy Developers："
+                android:textColor="#434343"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="12dp"
+                android:text="KOST    Kevin Lee"
+                android:textColor="#848484"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="18dp"
+                android:text="北邮网关登录API："
+                android:textColor="#434343"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="12dp"
+                android:text="https://github.com/KunsLand/GWSelf"
+                android:textColor="#848484"
+                android:textSize="13sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="12dp"
+                android:text="使用说明："
+                android:textColor="#434343"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="12dp"
+                android:lineSpacingExtra="4dp"
+                android:text="1、连接宿舍或学校的无线wifi\n2、启动软件输入学号与密码登陆 \n3、成功后下次将自动填写账户密码\n * 点击IP地址登出IP\n * 点击数据统计展示图示"
+                android:textColor="#848484"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="24dp"
+                android:lineSpacingExtra="4dp"
+                android:text="* 暂不支持图书馆、食堂等，欢迎交流学习"
+                android:textColor="#434343"
+                android:textSize="13sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
